@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="../dev/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <h1>
+            PW - GENERATE
+        </h1>
+        <form id="form-senha">
+            <label for="length" >Comprimento:</label required >
+            <input type="number" id="length" min="4" max="25" value="4">
+            <br>
+            <label for="uppercase">Incluir Letras maiusculas:</label>
+            <input type="checkbox" id="uppercase" checked>
+            <br>
+            <label for="numbers">Incluir numeros:</label>
+            <input type="checkbox" id="numbers" checked>
+            <br>
+            <label for="symbols">Incluir simbolos:</label>
+            <input type="checkbox" id="symbols" checked>
+            <br>
+            <button id="generate-btn" type="button">Gerar senha</button>
+            <br>
+            <input type="text" id="password" readonly>
+        </form>
+    </div>
+    
+</body>
+<script src="./scripts/main.js"></script>
+</html>
